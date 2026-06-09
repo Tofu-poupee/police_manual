@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウブ♡ぶい警察用ルールブック</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./icons/GTA_.ico">
+
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>
+            ウブ♡ぶい警察用ルールブック
+            <br>
+            <div class="header-span">※こちらのサイトは、URLも含めて<br class="sp">他の方への<span>情報漏洩厳禁</span>でお願いします</div>
+        </h1>
+    </header>
+
+    <div class="wrap">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="dot">R</div>
+                <div>
+                    <h1>
+                        ウブ♡ぶい警察用ルール
+                    </h1>
+                    <div class="desc">たくさんのルールを素早く検索・フィルタできます</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="search">
+                    <input id="searchInput" type="search" placeholder="検索（キーワード）..." />
+                    <button id="clearBtn" class="btn ghost">×</button>
+                </div>
+
+                <div class="tags" id="tags"></div>
+
+                <div style="display:flex;gap:8px;margin-top:8px">
+                    <button id="expandAll" class="btn">展開</button>
+                    <button id="collapseAll" class="btn ghost">閉じる</button>
+                </div>
+
+                <div style="margin-top:12px">
+                    <span style="color:var(--muted);font-size:13px">
+                        表示件数: <span id="count">0</span>
+                    </span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main" id="main">
+            <div class="topbar">
+                <div>
+                    <h2 style="margin:0;font-size:18px">全ルール</h2>
+                    <div class="stats">カテゴリ / タグで絞り込み可能</div>
+                </div>
+                <div class="controls-compact">
+                    <button id="copyAll" class="btn ghost">全コピー</button>
+                    <button id="downloadJson" class="btn">JSON保存</button>
+                </div>
+            </div>
+
+            <section class="list" id="ruleList">
+                <!-- 全体 -->
+                <article class="rule" data-category="基本的な心構え・マナー" data-tags="全体,マナー,行動,交流,名前" id="rule-1">
+                    <h3>【全プレイヤー】基本的な心構え・マナー</h3>
+                    <div class="meta">
+                        <div class="badge">基本的な心構え・マナー</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, マナー, 行動, 交流, 名前</div>
+                    </div>
+                    <div class="content">
+                        サーバー内で活動する上での心構えや交流、禁止行為に関する基本ルール。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>ストリーマーとして常識ある行動を心がけること。</li>
+                            <li>相手への思いやりを持って行動する。</li>
+                            <li>サーバー内の”情報漏洩”は禁止。</li>
+                            <li>言動・行動に責任を持ち、ルールを守ること。</li>
+                            <li>サーバー内で起こったことはサーバー外に持ち出さない（全てRPとして理解する）。</li>
+                            <li>公序良俗に反するキャラクターネーム禁止（メインネームは活動名で統一）。</li>
+                            <li>過度なストーカー行為、セクハラ行為は禁止。</li>
+                            <li>他プレイヤーと交流を大切にし、街ではマイクをオンにして会話すること。</li>
+                            <li>連絡事項には必ずレスポンスを行う。</li>
+                            <li>提出締め切りを守る。（遅れる場合は事前に相談）</li>
+                            <li>ディスコードのフレンド申請は双方合意の上で行うこと。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="トラブル・違反対応" data-tags="全体,違反,通報,バグ,報告" id="rule-2">
+                    <h3>【全プレイヤー】トラブル・違反対応</h3>
+                    <div class="meta">
+                        <div class="badge">トラブル・違反対応</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, 違反, 通報, バグ, 報告</div>
+                    </div>
+                    <div class="content">
+                        サーバー内で発生する問題や違反行為への対応方法に関するルール。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>サーバー内の問題はRPで解決すること。</li>
+                            <li>明らかなルール違反は運営に報告（クリップ必須、その場で直接指摘禁止）。</li>
+                            <li>バグやグリッチは運営に報告、故意利用は禁止（重い処分あり）。</li>
+                            <li>他プレイヤーの配信やアーカイブを利用したゴースティングは禁止。</li>
+                            <li>外部ツールを使った通話・情報共有は禁止（例外：日程調整や犯罪場所メモのみ可）。</li>
+                            <li>ルール違反を見かけたら報告する。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="イベント・企画" data-tags="全体,イベント,告知" id="rule-2">
+                    <h3>【全メンバー】イベント・企画</h3>
+                    <div class="meta">
+                        <div class="badge">イベント・企画</div>
+                        <div>更新: 2025-8-12</div>
+                        <div class="muted">タグ: 全体, イベント, 告知</div>
+                    </div>
+                    <div class="content">
+                        イベントや企画を円滑に実施するためのルール。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>開催予定のイベントや企画は早めに共有する。（告知・制作・実行確認のため）</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="表示名" data-tags="全体,名前,ふりがな" id="rule-5">
+                    <h3>【全メンバー】表示名ルール</h3>
+                    <div class="meta">
+                        <div class="badge">表示名</div>
+                        <div>更新: 2025-8-12</div>
+                        <div class="muted">タグ: 全体, 名前, ふりがな</div>
+                    </div>
+                    <div class="content">
+                        サーバー上で使用する表示名のルール。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>サーバー上の名前は活動名（ふりがな）にする。例：猫照めにあ(ねこてるめにあ)</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="チャット・コマンド利用制限" data-tags="全体,チャット,コマンド,禁止" id="rule-3">
+                    <h3>【全プレイヤー】チャット・コマンド利用制限</h3>
+                    <div class="meta">
+                        <div class="badge">チャット・コマンド利用制限</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, チャット, コマンド, 禁止</div>
+                    </div>
+                    <div class="content">
+                        サーバー内で使用禁止となっているチャットやコマンドに関するルール。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>テキストチャットおよび /me コマンド禁止。</li>
+                            <li>/carry の悪用禁止（他プレイヤーの妨害行為）。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="アバター・キャラクター制限" data-tags="全体,アバター,スキン,キャラクター" id="rule-4">
+                    <h3>【全プレイヤー】アバター・キャラクター制限</h3>
+                    <div class="meta">
+                        <div class="badge">アバター・キャラクター制限</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, アバター, スキン, キャラクター</div>
+                    </div>
+                    <div class="content">
+                        使用可能なアバターやキャラクターに関する制限。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>初期アバター / NPCスキン / 透明スキン禁止。</li>
+                            <li>プレイヤーは1人1キャラのみ。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="戦闘・コンバット関連" data-tags="全体,戦闘,コンバット,禁止" id="rule-5">
+                    <h3>【全プレイヤー】戦闘・コンバット関連ルール</h3>
+                    <div class="meta">
+                        <div class="badge">戦闘・コンバット関連</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, 戦闘, コンバット, 禁止</div>
+                    </div>
+                    <div class="content">
+                        コンバットログや戦闘時のルール、装備制限について。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>コンバットログはできる限り避ける。</li>
+                            <li>やむを得ない場合は全体チャットで報告後退出。</li>
+                            <li>ダウン・大ダウン時は医療施設で相応の代金を支払う。</li>
+                            <li>犯罪中のコンバットログは次回IN時に指名手配30分＋必要に応じて医療費支払い。</li>
+                            <li>外部レティクル禁止（GTAデフォルトのみ使用可）。</li>
+                            <li>警察・救急隊の犯罪行為禁止。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="リログ・リスポーン関連" data-tags="全体,リログ,リスポーン,移動" id="rule-6">
+                    <h3>【全プレイヤー】リログ・リスポーン関連</h3>
+                    <div class="meta">
+                        <div class="badge">リログ・リスポーン関連</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, リログ, リスポーン, 移動</div>
+                    </div>
+                    <div class="content">
+                        移動目的での再接続やリスポーンに関する禁止事項。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>移動手段としてのリログ（再接続）、リスポーン（ダウン後E長押し）禁止。</li>
+                            <li>リスポーン位置変更は「最後の位置」以外禁止。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="定期再起動時の制限" data-tags="全体,再起動,犯罪禁止" id="rule-7">
+                    <h3>【全プレイヤー】定期再起動時の制限</h3>
+                    <div class="meta">
+                        <div class="badge">定期再起動時の制限</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, 再起動, 犯罪禁止</div>
+                    </div>
+                    <div class="content">
+                        サーバー定期再起動前後の犯罪行為に関する制限。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>サーバー定期再起動の前後30分は犯罪禁止。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="職業関連" data-tags="全体,職業,ジョブ,市民,犯罪" id="rule-8">
+                    <h3>【全プレイヤー】職業関連ルール</h3>
+                    <div class="meta">
+                        <div class="badge">職業関連</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, 職業, ジョブ, 市民, 犯罪</div>
+                    </div>
+                    <div class="content">
+                        就職や職業制限、勤務状態の切り替えに関するルール。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>退勤時は必ずジョブの勤務状態をオフにする。</li>
+                            <li>白市民（犯罪歴なし）：メイン職＋副職2つ。</li>
+                            <li>黒市民（犯罪歴あり）：メイン職＋副職1つ。</li>
+                            <li>タクシーは副職として利用可能（違法薬物ヒントはなし）。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="ダウン・大ダウン時の行動制限" data-tags="全体,ダウン,大ダウン,行動制限" id="rule-9">
+                    <h3>【全プレイヤー】ダウン・大ダウン時の行動制限</h3>
+                    <div class="meta">
+                        <div class="badge">ダウン・大ダウン時の行動制限</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, ダウン, 大ダウン, 行動制限</div>
+                    </div>
+                    <div class="content">
+                        ダウン・大ダウン時の行動制限や救助要請の手順。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>ダウン時は包帯延命禁止、無線連打禁止（場所通知は可）、エモート禁止、日常会話は可（有利情報は不可）。</li>
+                            <li>大ダウン時は情報共有禁止、無線連打禁止（場所通知は可）、エモート禁止。</li>
+                            <li>大ダウン状態で5分経過 → 声で救助要請。</li>
+                            <li>10分経過しても救助なし → 運営サポへ連絡。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="犯罪・プレイヤーロブ関連" data-tags="全体,犯罪,ロブ,ギャング,NPC" id="rule-10">
+                    <h3>【全プレイヤー】犯罪・プレイヤーロブ関連</h3>
+                    <div class="meta">
+                        <div class="badge">犯罪・プレイヤーロブ関連</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, 犯罪, ロブ, ギャング, NPC</div>
+                    </div>
+                    <div class="content">
+                        犯罪行為やプレイヤーロブの制限、NPCへの行動について。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>基本的にプレイヤーロブは禁止。</li>
+                            <li>ギャング同士のみ可（お金・携帯は禁止、補填なし）。</li>
+                            <li>必要以上のNPC殺害禁止（サーバー負荷防止）。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="救急隊への通知" data-tags="全体,救急隊,通知,連打禁止" id="rule-11">
+                    <h3>【全プレイヤー】救急隊への通知</h3>
+                    <div class="meta">
+                        <div class="badge">救急隊への通知</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, 救急隊, 通知, 連打禁止</div>
+                    </div>
+                    <div class="content">
+                        救急隊への通知回数や注意事項について。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>救急隊への通知は3分に1回程度。</li>
+                            <li>連打は全通知が流れ混乱するため禁止。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="禁止車両" data-tags="全体,車両,武装,飛行,禁止" id="rule-12">
+                    <h3>【全プレイヤー】禁止車両</h3>
+                    <div class="meta">
+                        <div class="badge">禁止車両</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, 車両, 武装, 飛行, 禁止</div>
+                    </div>
+                    <div class="content">
+                        サーバー内で使用禁止となっている車両の種類。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>武装が可能となる車両。</li>
+                            <li>殺傷能力のある車両。</li>
+                            <li>飛行機能のある車両（ヘリは可）。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="禁止カスタム" data-tags="全体,カスタム,武装,ヘリ,禁止" id="rule-13">
+                    <h3>【全プレイヤー】禁止カスタム</h3>
+                    <div class="meta">
+                        <div class="badge">禁止カスタム</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, カスタム, 武装, ヘリ, 禁止</div>
+                    </div>
+                    <div class="content">
+                        車両やヘリのカスタムに関する禁止事項。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>武装ができるカスタム（防弾はタイヤのみ可）。</li>
+                            <li>殺傷能力が追加できるカスタム。</li>
+                            <li>ヘリのカスタム（アーマーのみ可）。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="ステッカー・デカール利用ルール" data-tags="全体,ステッカー,デカール,施設,申請" id="rule-14">
+                    <h3>【全プレイヤー】ステッカー利用ルール</h3>
+                    <div class="meta">
+                        <div class="badge">ステッカー利用ルール</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 全体, ステッカー, 施設, 申請</div>
+                    </div>
+                    <div class="content">
+                        ステッカーの利用、申請、設置に関するルール。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>救急・警察・メカニックは施設が大きくメンバー数が多いため、一人1枚まで可。</li>
+                            <li>自身の陣地にのみ貼ること。</li>
+                            <li>乗り物への貼付はメカニックに依頼すること（1台につき2枚まで可）。</li>
+                            <li>メカニック職ならメカニック施設、警察なら警察施設など所属施設に貼ること。</li>
+                            <li><code>/decals</code> でステッカーメニューを開く。</li>
+                            <li><code>/clear_graffiti</code> でステッカー削除。</li>
+                            <li>上記コマンドは T を押して記入後エンターで実行。</li>
+                            <li>個人的なステッカー申請は1人2枚まで、事前申請必須。</li>
+                            <li>反映まで1～2日かかる場合あり。</li>
+                        </ol>
+                    </div>
+                </article>
+
+
+                <!-- /全体 -->
+                <!-- 警察 -->
+                <article class="rule" data-category="勤務・服装" data-tags="警察, 制服,無線,勤務" id="rule-1">
+                    <h3>【警察】勤務・服装について</h3>
+                    <div class="meta">
+                        <div class="badge">勤務・服装</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 制服, 無線, 出勤</div>
+                    </div>
+                    <div class="content">
+                        警察勤務に関わる服装や出勤、無線の基本ルールについて。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>出勤時は必ず制服を着用して活動してください。</li>
+                            <li>勤務中は署長・副署長が認めた制服を着用し、全員が着用する制服は写真等で共有し統一してください。</li>
+                            <li>退勤時は必ず私服で活動してください。</li>
+                            <li>退勤時は必ず私服で活動してください。</li>
+                            <li>出勤時は必ず警察専用無線（2～10番チャンネル）に入ってください。</li>
+                            <li>警察は犯罪禁止（服装や名前を変えても禁止）です。</li>
+                            <li>警察の収入は日給（15分ごとに発生）と犯罪対応における報酬分配からなります。</li>
+                            <li>イベント中は犯罪禁止です。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="出勤・退勤" data-tags="警察,ジョブ,出勤,退勤,操作方法" id="rule-14">
+                    <h3>【警察】出勤・退勤方法について</h3>
+                    <div class="meta">
+                        <div class="badge">出勤・退勤方法について</div>
+                        <div>更新: 2025-8-17</div>
+                        <div class="muted">タグ: 警察,ジョブ,出勤,退勤,操作方法</div>
+                    </div>
+                    <div class="content">
+                        各ジョブの出勤・退勤の操作方法の説明です。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <h4>出勤方法</h4>
+                        <ol>
+                            <li>
+                                （全開で退勤操作をしていた場合は、こちらから）<br>
+                                キーボードキーの「J」を押す
+                            </li>
+                            <li>
+                                サイドメニューが表示されますので、２つのボタンのどちらかをクリック
+                                （上に表記されるジョブと下に表記されるジョブがあるからです。）
+                            </li>
+                            <li>
+                                自分のジョブが「on duty」で出勤<br>
+                                「off duty」または、どちらも表示されない場合は「select」が退勤状態です。
+                            </li>
+                            <li>
+                                「off duty」の場合は、「off duty」をクリックしていただくと<br>「on duty」に切り替わります。ここまででGTA内の出勤は完了です
+                            </li>
+                            <li>
+                                次に「on duty」を確認後、所属ジョブの仲間に出勤したことを伝える
+                            </li>
+                            <li>
+                                伝え方は、基本的に無線です。所属ジョブの無線をUSEをしていただくと右下に無線が出てきます。
+                            </li>
+                            <li>
+                                無線の液晶画面は、クリックできるようになっていますので<br>
+                                液晶画面をクリック、各ジョブで指定されている番号を入力<br>
+                                （警察だと2です。）
+                            </li>
+                            <li>
+                                無線マイクのキーを長押ししながら、「おはようございます！○○○○出勤しました！」と伝えていただいたら完了です。<br>
+                                （初期キーは、左ALTです。変更する場合は、キー設定＞fiveM＞radio talk～のキーを変更してください）
+                            </li>
+                        </ol>
+                        <h4>退勤方法</h4>
+                        <ol>
+                            <li>
+                                （ジョブを外して、休日を過ごされる場合）<br>
+                                キーボードキーの「J」を押す
+                            </li>
+                            <li>
+                                サイドメニューが表示されますので、２つのボタンのどちらかをクリック
+                                （上に表記されるジョブと下に表記されるジョブがあるからです。）
+                            </li>
+                            <li>
+                                自分のジョブが「on duty」になっていると思いますので<br>
+                                「off duty」または、「select」に変えます
+                            </li>
+                            <li>
+                                「on duty」クリックしていただくと
+                                「off duty」に切り替わります。ここまででGTA内の退勤は完了です。
+                            </li>
+                            <li>
+                                もし「off duty」にならないようでしたら、「select」をクリックしてください。<br>
+                                「on duty」の表記がなくなれば退勤完了です
+                            </li>
+                            <li>
+                                次に「off duty」または、「select」を確認後、所属ジョブの仲間に退勤したことを伝える
+                            </li>
+                            <li>
+                                無線マイクのキーを長押ししながら、「○○○○退勤します！おやすみなさい！」と伝えていただいたら完了です。<br>
+                                （初期キーは、左ALTです。変更する場合は、キー設定＞fiveM＞radio talk～のキーを変更してください）
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="情報漏洩" data-tags="警察, 情報漏洩" id="rule-13">
+                    <h3>【警察】情報漏洩について</h3>
+                    <div class="meta">
+                        <div class="badge">情報漏洩</div>
+                        <div>更新: 2025-8-11</div>
+                        <div class="muted">タグ:警察, 情報漏洩</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ul>
+                            <li>警察業務で知り得た情報は、警察以外の人物に伝えてはいけません。</li>
+                            <li>例：<br>
+                                「今、銀行強盗が多発してるから稼ぎ時だよ！」<br>
+                                「車はガレージにしまえば直るよ」</li>
+                            <li>これらは警察同士で話す分には問題ありませんが、相手が警察以外の場合は伝えないよう注意してください。</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="警察コマンド" data-tags="警察, コマンド, 手荷物検査, インパウンド, リセット" id="rule-15">
+                    <h3>【警察】アクション・コマンド一覧</h3>
+                    <div class="meta">
+                        <div class="badge">警察コマンドについて</div>
+                        <div>更新: 2025-8-15</div>
+                        <div class="muted">タグ:警察, コマンド, 手荷物検査, インパウンド, リセット</div>
+                        <div class="content">
+                            警察勤務にかかわるコマンドアクションについて
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <h4>キーボードキーの「T」を押すと左上に、コマンドを入力できる場所が出てきます。</h4>
+                        <table border="1" cellpadding="6" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>コマンド</th>
+                                    <th>内容</th>
+                                    <th>補足</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>/iv</code></td>
+                                    <td>車両インパウンド<br>（インパウンド場まで行ける時や犯人の車を押収する時用）</td>
+                                    <td>
+                                        <ul>
+                                            <li>インパウンド場Aは街中、場Bは北側湖付近</li>
+                                            <li>
+                                                オーナーも引き取れるよう「オーナー〜」欄にチェックを入れる
+                                                <br>
+                                                （そうしないと押収した警察しか出せなくなります）
+                                            </li>
+                                            <li>時間・金額はルールブックの車両押収を確認しながら入力</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><code>/impound</code></td>
+                                    <td>車両インパウンド（事件対応で忙しい時用）</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/escort</code></td>
+                                    <td>護送</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/pdfleeca</code></td>
+                                    <td>銀行リセット</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/pdshoprobbery</code></td>
+                                    <td>コンビニリセット</td>
+                                    <td>犯人が人質開放条件について話している間が使用目安</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">手荷物検査_操作手順例：<code>work → 警察アクション → 検索</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+
+
+                <article class="rule" data-category="押収品該当リスト" data-tags="警察, アイテム,押収品,犯罪" id="rule-items">
+                    <h3>【警察】押収品該当リスト</h3>
+                    <div class="meta">
+                        <div class="badge">押収品該当リスト</div>
+                        <div>更新: 2025-08-15</div>
+                        <div class="muted">タグ: 警察, アイテム, 押収品, 犯罪</div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+
+                    <div class="more hidden">
+                        <div class="item-images">
+                            <img src="./img/2025-08-15_022332.png" alt="武器・道具 一覧画像"
+                                style="max-width:100%; height:auto;">
+                            <img src="./img/2025-08-15_023218.png" alt="貴重品 一覧画像"
+                                style="max-width:100%; height:auto; margin-top:10px;">
+                        </div>
+
+                        <h4>武器・道具</h4>
+                        <ul>
+                            <li>PISTOL</li>
+                            <li>SMG</li>
+                            <li>VANGELICO KEY</li>
+                            <li>ASSAULT RIFLE</li>
+                            <li>THERMITE</li>
+                            <li>HACK USB</li>
+                            <li>BOMB</li>
+                            <li>BIG BOMB</li>
+                            <li>BAG</li>
+                            <li>CUTTER</li>
+                            <li>DRILL</li>
+                            <li>BIG DRILL</li>
+                            <li>ROPE</li>
+                            <li>C4 BOMB</li>
+                            <li>HACK LAPTOP</li>
+                            <li>LAPTOP</li>
+                            <li>ハーフアーマー</li>
+                            <li>BOLT CUTTER</li>
+                            <li>THERMITE BOMB</li>
+                            <li>CASINO KEY 1</li>
+                            <li>CASINO KEY 2</li>
+                            <li>CRACK KIT</li>
+                            <li>VIDEO RECORD</li>
+                            <li>GASMASK</li>
+                        </ul>
+
+                        <h4>報酬品</h4>
+                        <ul>
+                            <li>あぶねぇオイル</li>
+                            <li>金腕時計</li>
+                            <li>DIAMOND</li>
+                            <li>10Kのゴールドチェーン</li>
+                            <li>GOLD BAR</li>
+                            <li>ソルオイル</li>
+                            <li>ルナオイル</li>
+                        </ul>
+                        <h4>その他</h4>
+                        <ul>
+                            <li>IDカード（白市民カード）</li>
+                            <li>運転免許証</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="基本役職RP" data-tags="警察, RP" id="rule-14">
+                    <h3>【警察】基本役職RPについて</h3>
+                    <div class="meta">
+                        <div class="badge">基本役職RP</div>
+                        <div>更新: 2025-8-15</div>
+                        <div class="muted">タグ:警察, RP</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ul>
+                            <li>出勤中の警察は、基本的な役職RPを行ってください。</li>
+                            <li>例：<br>
+                                - 人質：「絶対に開放してあげるから、待っていてね」<br>
+                                - 牢屋：「また悪いことをするなよ！」<br>
+                                - 犯人：「逮捕！牢屋に搬送するから大人しくしていなさい」
+                            </li>
+                            <li>基本は一人でのRPを推奨します。</li>
+                            <li>他プレイヤーと行動中に、無理に犯罪を誘発したり情報を漏らしたりしてはいけません。<br>
+                                例：「今、飛行場で○○が起こっている」といった犯罪誘発や情報漏洩は禁止です。
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+
+                <article class="rule" data-category="バグ対応" data-tags="警察, バグ,罰金,チェイス" id="rule-2">
+                    <h3>【警察】バグ時の対応</h3>
+                    <div class="meta">
+                        <div class="badge">バグ対応</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: バグ, 罰金, チェイス</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>犯罪時に金庫のアイテムがないなどのバグがあった場合は、罰金は減額またはなしとします。</li>
+                            <li>チェイス中のバグはチェイスのやり直しのみとします。</li>
+                        </ol>
+                    </div>
+                </article>
+
+
+                <article class="rule" data-category="車両・チェイス" data-tags="警察, 車両,チェイス,サイレン" id="rule-2">
+                    <h3>【警察】車両・チェイスに関するルール</h3>
+                    <div class="meta">
+                        <div class="badge">車両・チェイス</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 車両, チェイス, サイレン</div>
+                    </div>
+                    <div class="content">
+                        警察車両の取り扱いやチェイス時の行動について。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>警察車両の貸し出し及び贈与は禁止です。</li>
+                            <li>現場へは必ず警察車両で向かい、警察車両以外の現場入りは禁止です。</li>
+                            <li>現場に向かう際はサイレン及び赤色灯をつけてください。現場到着後は消灯しますが、人質がいる場合は継続してください。</li>
+                            <li>チェイス中は必ずサイレン及び赤色灯をつけて行動してください。</li>
+                            <li>チェイス開始の合図は警察側が行います。</li>
+                            <li>犯人がクラッシュした場合、チェイス中であればチェイスのやり直しとします。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="副業・アルバイト" data-tags="警察, 副業,アルバイト,採用" id="rule-4">
+                    <h3>【警察】副業・アルバイトについて</h3>
+                    <div class="meta">
+                        <div class="badge">副業・アルバイト</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 副業, アルバイト</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>警察および救急隊にはブラックリストの市民は就けません。</li>
+                            <li>副業はアルバイトとしてなら可能です。</li>
+                            <li>新規で警察に就職する場合は体験期間後、上層部の審査を経て正式な新人として入隊します。アルバイト扱いとなります。</li>
+                            <li>警察の武器庫や押収品箱からの物品の提供行為は禁止です。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="指名手配" data-tags="警察, 指名手配,職務質問,罰金" id="rule-6">
+                    <h3>【警察】指名手配について</h3>
+                    <div class="meta">
+                        <div class="badge">指名手配</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 指名手配, 職務質問, 罰金</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>犯罪現場で傷を負った際に発生する血痕をフラッシュライトで採取し、証拠分析室で調査することで指名手配となります。</li>
+                            <li>指名手配の有効期間は1時間です。追加で指名手配があった場合は時間も加算されます。</li>
+                            <li>職務質問は声をかけてから可能ですが、システムでの判断での無断対応（請求書画面のプレイヤー選択で出てくる名前や声での判断）は禁止します。</li>
+                            <li>犯人は警察に声をかけられてから逃走可能ですが、捕まった場合は公務執行妨害として罰金が追加されます。</li>
+                            <li>警察は、犯人と上記の判断材料で確定できた場合、声掛けをした後に、即手錠、即テーザー可能です。</li>
+                            <li>犯人は声かけ後に銃撃やチェイスで逃走可能ですが、警察からの声かけ以降の発砲のみ認められます。</li>
+                            <li>蘇生後は再度犯人を追跡可能ですが、こちらはゾンビアタックには該当しません。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="人数制限" data-tags="警察, 犯罪,人数" id="rule-7">
+                    <h3>【警察】大型の人数制限</h3>
+                    <div class="meta">
+                        <div class="badge">大型の人数制限について</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 犯罪, 人数制限</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>
+                                小型犯罪：最大6人
+                                <ul>
+                                    <li>ATM強盗</li>
+                                    <li>空き巣強盗</li>
+                                    <li>コンビニ強盗</li>
+                                    <li>車両窃盗</li>
+                                </ul>
+                            </li>
+                            <li>
+                                中型犯罪：最大10人
+                                <ul>
+                                    <li>銀行強盗</li>
+                                    <li>宝石店強盗</li>
+                                    <li>ボブキャット</li>
+                                    <li>ナイトクラブ強盗</li>
+                                </ul>
+                            </li>
+                            <li>
+                                大型犯罪：最大18人
+                                <ul>
+                                    <li>アーティファクト</li>
+                                    <li>オイルリグ</li>
+                                    <li>カーヘイスト</li>
+                                    <li>カジノヘイスト</li>
+                                    <li>客船強盗</li>
+                                    <li>パシフィック銀行</li>
+                                    <li>ヒューマンラボ</li>
+                                    <li>ユニオンヘイスト</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="発砲条件" data-tags="警察, 発砲,実弾,警告" id="rule-9">
+                    <h3>【警察】発砲条件（実弾使用銃）</h3>
+                    <div class="meta">
+                        <div class="badge">発砲条件</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 発砲, 実弾, 警告</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>テーザーや、ピストルも発砲する際には必ずRPをとして、シャウトで一言かけるようにする。</li>
+                            <li>武器を出している場合の荷物検査拒否は警告後5カウントで発砲可能。</li>
+                            <li>銃器を向けられた場合は即発砲可能（5カウント不要）。</li>
+                            <li>停止命令無視は5カウント後に発砲可能。</li>
+                            <li>強盗時は人質がいないことを確認し5カウント後に発砲可能。</li>
+                            <li>チェイス後の警告（スーパーシャウト）後に発砲可能。</li>
+                            <li>ドライブバイはハンドガン・ピストルのみ許可。中型・大型犯罪は無条件で可能。</li>
+                            <li>小型犯罪での射殺は原則禁止（やむを得ない場合は上司へ共有）。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="麻薬犯罪対応" data-tags="警察, 麻薬,逮捕,テーザー" id="rule-10">
+                    <h3>【警察】麻薬犯罪対応</h3>
+                    <div class="meta">
+                        <div class="badge">麻薬犯罪</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 麻薬, 逮捕, テーザー</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>麻薬素材の採取場所（花のみ）や精製所での現行犯逮捕は即手錠可能（声掛け厳守）。</li>
+                            <li>テーザー銃は静止命令→無視→警告後に発砲可能。</li>
+                            <li>ドライブバイは禁止。チェイスが5分以上の場合は車から降りてタイヤ狙い発砲可能。</li>
+                            <li>警察殺害・犯人と車・見た目の証言一致時は無警告即実弾発砲可能。</li>
+                            <li>パトロール時は副署長以上に連絡必須。</li>
+                            <li>パトロール中は赤色灯点灯（張り込みは例外）。</li>
+                            <li>麻薬犯罪は指名手配になりません。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="持ち物検査" data-tags="警察, 持ち物検査,罰金,チェイス, 職務質問" id="rule-11">
+                    <h3>【警察】持ち物検査</h3>
+                    <div class="meta">
+                        <div class="badge">持ち物検査</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 持ち物検査, 罰金, チェイス, 職務質問</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>通知があった場所で不審な人物がいた際に声をかけて、手錠を使用後、<br>
+                                「この近くて通報がありまして、手荷物検査しますね」<br>
+                                と声をかけて対応してください。</li>
+                            <li>持ち物検査は義務で拒否不可。拒否し逃走した場合はチェイスを実施。</li>
+                            <li>押収対象があれば押収し罰金対応。公務執行妨害や暴力罪の追加罰金を科す場合あり。</li>
+                            <li>逃走中や指名手配中などに怪しい人物がいた場合、車両を確認することが可能性です。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="車両押収" data-tags="警察, 押収,車両,インパウンド" id="rule-12">
+                    <h3>【警察】車両押収（インパウンド）</h3>
+                    <div class="meta">
+                        <div class="badge">車両押収</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 押収, 車両, インパウンド</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>犯罪者の乗り物は逮捕後、または犯人逃走後に押収可能（犯罪中は不可）。</li>
+                            <li>押収した車両は10分で取り戻せる。</li>
+                            <li>警察全滅または降参時は押収しない。</li>
+                            <li>
+                                インパウンドのやり方は、<br>
+                                コマンド一覧に書いてある/ivの手順に従って行ってください。
+                            </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="ヘリコプター" data-tags="警察, ヘリコプター,パトロール,武器" id="rule-13">
+                    <h3>【警察】ヘリコプターの利用</h3>
+                    <div class="meta">
+                        <div class="badge">ヘリコプター</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ:警察, ヘリコプター, パトロール, 武器</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>街中パトロールは可能だが麻薬関連パトロールは禁止。</li>
+                            <li>大型・中型犯罪の特定車両（パレット、ボブキャット）はサーマル・ロックオン可能。</li>
+                            <li>ヘリは最大4人乗車可能。</li>
+                            <li>ヘリブレード・ヘリアタックも可能。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="犯罪者の役割" data-tags="警察, ピック,罰金,刑務所" id="rule-14">
+                    <h3>【警察】ピック役について</h3>
+                    <div class="meta">
+                        <div class="badge">ピック役について</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, ピック, 罰金, 刑務所</div>
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>「ピック」（仲間回収役）は銃を保持している場合、参加犯罪と同じ罰金・刑務所送りがあります。</li>
+                            <li>銃を持っていない場合は罰金半額・刑務所送りなし。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="ロケットランチャー、グレネード" data-tags=" 警察, ロケットランチャー, グレネード" id="rule-3">
+                    <h3>【警察】ロケットランチャー、グレネードについて</h3>
+                    <div class="meta">
+                        <div class="badge">犯罪対応</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, ロケットランチャー, グレネード</div>
+                    </div>
+                    <div class="content">
+                        ロケットランチャー、グレネードについての詳細ルール。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>ロケットランチャーの使用が認められる犯罪：大型（ユニオン・パシフィック）、中型（ボブキャット）。</li>
+                            <li>グレネードランチャーの使用が認められる犯罪：大型全般、中型（ボブキャット）。</li>
+                            <li>現場使用はグレ・ロケラン合わせて3発まで。使用時は必ず無線で共有。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="横取り" data-tags="警察, 刑務所送り,インパウンド" id="rule-3">
+                    <h3>【警察】横取りについて</h3>
+                    <div class="meta">
+                        <div class="badge">横取り</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ: 警察, 刑務所送り, インパウンド</div>
+                    </div>
+                    <div class="content">
+                        横取り行為に関するルールです。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>刑務所送りの対象となります。</li>
+                            <li>インパウンド対応は、大型・中型は10分、それ以外は即時対応となります。</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="セクハラ" data-tags="警察,発砲,テーザー,刑務所送り" id="rule-4">
+                    <h3>【警察】セクハラについて</h3>
+                    <div class="meta">
+                        <div class="badge">セクハラ</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ:警察, 発砲, テーザー, 刑務所送り</div>
+                    </div>
+                    <div class="content">
+                        セクハラ行為とその対応についてのルールです。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>対象となる行動：強制おんぶ、長時間の手錠デート、長時間の抱っこエモートなど。</li>
+                            <li>発砲はテーザーのみ許可。（相手が発砲する場合や過度に抵抗する場合の威嚇射撃として実弾発砲を許可）。</li>
+                            <li>刑務所送りは原則無し。ただし度合いによってはあり得る。</li>
+                            <li>インパウンド対応は、あり(即時出せるようにする。)</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="警察車両窃盗罪" data-tags="警察,窃盗,発砲,刑務所送り" id="rule-5">
+                    <h3>【警察】警察車両窃盗罪について</h3>
+                    <div class="meta">
+                        <div class="badge">警察車両窃盗罪</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ:警察, 窃盗, 発砲, 刑務所送り</div>
+                    </div>
+                    <div class="content">
+                        警察車両の窃盗に関するルールと対応について。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>対象となる行動は警察車両の窃盗。</li>
+                            <li>対応できる人数・車両の制限はありません。</li>
+                            <li>犯罪現場外の場合は、小型犯罪と同様に職務質問から対応する。</li>
+                            <li>犯罪現場での盗難の場合は、警告なしに発砲可能とする。</li>
+                            <li>刑務所送りは原則無し。ただし状況によりあり得る。</li>
+                            <li>インパウンド対応は、あり(即時出せるようにする。)</li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article class="rule" data-category="抗争対応" data-tags="警察,抗争,出動制限" id="rule-6">
+                    <h3>【警察】抗争時の対応について</h3>
+                    <div class="meta">
+                        <div class="badge">抗争対応</div>
+                        <div>更新: 2025-8-10</div>
+                        <div class="muted">タグ:警察, 抗争, 出動制限</div>
+                    </div>
+                    <div class="content">
+                        抗争が街で発生している場合の警察の出動ルールです。
+                    </div>
+                    <div class="actions">
+                        <button class="small" data-action="toggle">詳しく</button>
+                        <button class="small" data-action="copy">コピー</button>
+                        <button class="small" data-action="anchor">リンク</button>
+                    </div>
+                    <div class="more hidden">
+                        <ol>
+                            <li>原則として、警察は街で抗争が起きている間は抗争が終わるまで出動しません。</li>
+                        </ol>
+                    </div>
+                </article>
+                <!-- /警察 -->
+
+            </section>
+
+            <div id="emptyState" class="empty hidden">該当するルールが見つかりません。</div>
+        </main>
+    </div>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>
+
